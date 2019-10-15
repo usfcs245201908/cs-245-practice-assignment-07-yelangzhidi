@@ -35,7 +35,7 @@ public class ArrayList<T> implements List<T> {
         if (pos >= size || pos < 0)
             throw new IndexOutOfBoundsException();
         T item = a[pos];
-        System.arraycopy(a,pos+1,a,pos,a.length-1-pos);
+        System.arraycopy(a,pos+1,a,pos,size-1-pos);
         /*
         for (int i = pos; i < size-1; i++)
             a[i] = a[i+1];
